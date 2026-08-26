@@ -204,10 +204,14 @@ ul{margin:0;padding:0}
   display:flex;align-items:center;gap:.85rem;width:100%;text-align:left;
   background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);color:#f4ece4;
   border-radius:var(--radius-m);padding:.85rem 1rem;font:inherit;font-size:var(--step-0);
-  cursor:pointer;transition:background .16s var(--ease),transform .16s var(--ease),border-color .16s var(--ease);
+  cursor:pointer;text-decoration:none;scroll-margin-top:5rem;
+  transition:background .16s var(--ease),transform .16s var(--ease),border-color .16s var(--ease);
 }
 .pick:hover{background:rgba(255,255,255,.11);border-color:rgba(224,163,58,.5);transform:translateX(3px)}
+.pick--static{cursor:default}
+.pick--static:hover{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.14);transform:none}
 .pick__icon{width:2.1rem;height:2.1rem;flex:none;color:var(--accent-500)}
+.card h3{scroll-margin-top:6rem}
 .pick__arrow{margin-left:auto;width:1.1rem;height:1.1rem;color:#a89887}
 
 /* Faixa de credenciais — o que a OAB permite dizer */

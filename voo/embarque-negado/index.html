@@ -24,6 +24,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/artigo.css">
 </head>
 
 <body>
@@ -42,370 +43,140 @@
   </div>
 </header>
 
-<!-- ========================= HERO ========================= -->
-<section class="hero" id="topo">
-  <span class="hero__glow" aria-hidden="true"></span>
-  <div class="wrap">
+<!-- ========================= ARTIGO ========================= -->
+<article class="artigo" id="topo">
 
-    <div>
+  <header class="artigo__head">
+    <div class="wrap">
       <span class="eyebrow">Embarque negado — preterição</span>
-      <h1>Negaram o seu embarque?<br><em>A norma já diz o que você tem direito a receber.</em></h1>
-      <p class="hero__lede">Quando a companhia deixa de transportar um passageiro que se apresentou para embarcar, a Resolução ANAC nº 400 chama isso de <strong>preterição</strong> — e, diferente do atraso e do cancelamento, ela fixa uma compensação financeira em valor determinado, devida de imediato.</p>
-
-      <div class="hero__actions">
-        <a class="btn btn--primary" data-wa="hero" href="#">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.6-6.1c-.25-.13-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.12s-.64.8-.79.97c-.14.17-.29.19-.54.06a6.7 6.7 0 01-3.3-2.9c-.25-.42.25-.4.71-1.3.08-.17.04-.31-.02-.44s-.56-1.35-.77-1.85c-.2-.48-.4-.42-.56-.42h-.48a.92.92 0 00-.67.31c-.23.25-.87.85-.87 2.07s.9 2.4 1.02 2.56c.13.17 1.76 2.69 4.27 3.77 1.59.69 2.21.75 3 .63.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.15-1.19-.06-.1-.23-.17-.48-.29z"/></svg>
-          Contar o que aconteceu
-        </a>
-        <a class="btn btn--ghost" href="#compensacao">Ver o que a norma garante</a>
+      <h1>Negaram o seu embarque?<em>A norma já diz o que você tem direito a receber.</em></h1>
+      <p class="artigo__pe">Quando a companhia deixa de transportar um passageiro que se apresentou para embarcar, a Resolução ANAC nº 400 chama isso de preterição — e, diferente do atraso e do cancelamento, fixa uma compensação financeira em valor determinado, devida de imediato.</p>
+      <div class="artigo__assinatura">
+        <img src="../assets/img/retrato-mariela.jpg" alt="" width="810" height="1012">
+        <p><strong>Mariela Celestino de Oliveira Gratz</strong>
+        Advogada — OAB/ES 14.594 · Celestino Advogados, Vitória/ES</p>
       </div>
-
-      <p class="hero__note">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-        Do primeiro contato ao envio de documentos, tudo pelo celular.
-      </p>
     </div>
+  </header>
 
-    <!-- O resumo da norma, visível antes de qualquer rolagem -->
-    <div class="hero__card">
-      <h2>O que a Resolução ANAC nº 400 garante</h2>
-      <ul class="hero__picks">
+  <figure class="artigo__foto">
+    <img src="../assets/img/artigo-embarque.jpg" alt="Fachada de um terminal de aeroporto contra o sol do fim de tarde" width="1800" height="820">
+  </figure>
 
-        <li><button class="pick" type="button" data-situacao="preterido">
-          <svg class="pick__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v9M9.5 10h3.6a1.9 1.9 0 010 3.8H9.5h4" stroke-linecap="round"/></svg>
-          <span>Compensação financeira imediata, em valor fixado por norma</span>
-          <svg class="pick__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-        </button></li>
+  <div class="artigo__corpo">
 
-        <li><button class="pick" type="button" data-situacao="preterido">
-          <svg class="pick__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h13l-3-3M20 16H7l3 3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <span>Reacomodação gratuita ou reembolso integral — a escolha é sua</span>
-          <svg class="pick__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-        </button></li>
+    <p>Embarque negado é o caso em que a norma é mais direta de todos. No atraso e no cancelamento, o prejuízo é apurado. Aqui, a Resolução ANAC nº 400 manda a companhia pagar <strong>um valor determinado, de imediato</strong> — e isso muda inteiramente a conversa.</p>
 
-        <li><button class="pick" type="button" data-situacao="preterido">
-          <svg class="pick__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 19h16M6 19v-7l6-4 6 4v7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <span>Alimentação, comunicação e hospedagem conforme a espera</span>
-          <svg class="pick__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-        </button></li>
+    <h2 id="o-que-e">Embarque negado nem sempre é overbooking</h2>
 
-        <li><button class="pick" type="button" data-situacao="preterido">
-          <svg class="pick__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3l7.5 3.2v5.1c0 4.4-3.1 8.4-7.5 9.7-4.4-1.3-7.5-5.3-7.5-9.7V6.2z" stroke-linejoin="round"/></svg>
-          <span>E, além da norma, o que o caso concreto comportar em juízo</span>
-          <svg class="pick__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-        </button></li>
+    <p>O art. 22 define <strong>preterição</strong> como a situação em que o transportador deixa de transportar passageiro que se apresentou para embarque no voo originalmente contratado. A venda de assentos acima da capacidade — o <em>overbooking</em> — é a causa mais conhecida, mas não é a única:</p>
 
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-<!-- Faixa de credenciais: só o que a norma permite afirmar -->
-<div class="trustbar">
-  <div class="wrap">
     <ul>
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l7.5 3.2v5.1c0 4.4-3.1 8.4-7.5 9.7-4.4-1.3-7.5-5.3-7.5-9.7V6.2z" stroke-linejoin="round"/></svg> Advogada inscrita na OAB/ES</li>
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.4 2" stroke-linecap="round"/></svg> 20 anos de advocacia</li>
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M11 18.5h2" stroke-linecap="round"/></svg> Documentação 100% digital</li>
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 12a8 8 0 10-3 6.2V21l3-1.2z" stroke-linejoin="round"/></svg> Atendimento direto com a advogada</li>
+      <li><strong>Excesso de reservas</strong> — a companhia vendeu mais assentos do que o voo comporta e alguém fica em terra. É o caso clássico.</li>
+      <li><strong>Troca de aeronave</strong> — o voo passa a ser operado por um avião menor e parte dos passageiros confirmados deixa de ser transportada.</li>
+      <li><strong>Conexão perdida por atraso da própria companhia</strong> — o primeiro trecho atrasa, o passageiro chega e é impedido de embarcar no segundo. Ele se apresentou, e não foi transportado.</li>
+      <li><strong>Recusa no portão</strong> — o passageiro é barrado apesar de ter bilhete válido e ter se apresentado no prazo, inclusive por engano de sistema ou marcação indevida de ausência.</li>
     </ul>
-  </div>
-</div>
 
-<!-- ========================= O QUE É PRETERIÇÃO ========================= -->
-<section class="section" id="o-que-e">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">O nome jurídico</span>
-      <h2>Embarque negado nem sempre é overbooking</h2>
-      <p class="lede">O art. 22 da Resolução ANAC nº 400 define preterição como a situação em que o transportador <strong>deixa de transportar passageiro que se apresentou para embarque no voo originalmente contratado</strong>. A venda de assentos acima da capacidade — o <em>overbooking</em> — é a causa mais conhecida, mas não é a única.</p>
-    </div>
+    <h2 id="compensacao">A compensação tem valor fixado por norma</h2>
 
-    <div class="cards reveal">
-      <article class="card">
-        <h3>Excesso de reservas</h3>
-        <p>A companhia vendeu mais assentos do que o voo comporta e alguém fica em terra. É o caso clássico de <em>overbooking</em>.</p>
-      </article>
-      <article class="card">
-        <h3>Troca de aeronave</h3>
-        <p>O voo passa a ser operado por um avião menor e parte dos passageiros já confirmados deixa de ser transportada.</p>
-      </article>
-      <article class="card">
-        <h3>Conexão perdida por atraso da própria companhia</h3>
-        <p>O primeiro trecho atrasa, o passageiro chega e é impedido de embarcar no segundo. Ele se apresentou, e não foi transportado.</p>
-      </article>
-      <article class="card">
-        <h3>Recusa no portão</h3>
-        <p>O passageiro é barrado apesar de ter bilhete válido e ter se apresentado no prazo — inclusive por engano de sistema ou marcação indevida de ausência.</p>
-      </article>
-    </div>
-  </div>
-</section>
+    <p>É o que distingue esse caso de todos os outros. O art. 24 manda a companhia pagar <strong>imediatamente</strong>, por transferência bancária, voucher ou em espécie: <strong>250 DES</strong> em voo doméstico e <strong>500 DES</strong> em voo internacional.</p>
 
-<!-- ========================= A COMPENSAÇÃO ========================= -->
-<section class="section section--alt" id="compensacao">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">O que a norma fixa</span>
-      <h2>A compensação por preterição tem valor determinado</h2>
-      <p class="lede">É o que distingue esse caso de todos os outros. No atraso e no cancelamento, o prejuízo é apurado. Na preterição, o art. 24 da Resolução ANAC nº 400 manda a companhia pagar <strong>imediatamente</strong>, por transferência bancária, voucher ou em espécie:</p>
-    </div>
+    <p>DES é a sigla de Direito Especial de Saque, uma unidade de conta do Fundo Monetário Internacional. A norma fixa o valor em DES justamente para que ele não se desatualize: a conversão para reais é feita pela cotação oficial do dia. Por isso esta página informa o valor na unidade em que a norma o escreveu — um número em reais aqui estaria errado amanhã.</p>
 
-    <div class="cards reveal">
-      <article class="card">
-        <h3>Voo doméstico</h3>
-        <p><strong>250 DES</strong> — duzentos e cinquenta Direitos Especiais de Saque.</p>
-      </article>
-      <article class="card">
-        <h3>Voo internacional</h3>
-        <p><strong>500 DES</strong> — quinhentos Direitos Especiais de Saque.</p>
-      </article>
-    </div>
+    <p>A compensação não substitui o serviço contratado. O passageiro preterido escolhe ainda entre <strong>reacomodação gratuita</strong> em outro voo, próprio ou de terceiro, na data e horário que lhe convenham, <strong>reembolso integral</strong> ou a realização do trajeto por outra modalidade de transporte. E a assistência material segue devida conforme a espera, contada do horário original: a partir de 1 hora, comunicação; de 2 horas, alimentação; de 4 horas, hospedagem e traslado em caso de pernoite.</p>
 
-    <div class="section-head reveal" style="margin-top:2.5rem">
-      <h3>O que é DES</h3>
-      <p class="lede">DES é a sigla de Direito Especial de Saque, uma unidade de conta do Fundo Monetário Internacional. A norma fixa o valor em DES justamente para que ele não se desatualize: a conversão para reais é feita pela cotação oficial do dia. Por isso esta página informa o valor na unidade em que a norma o escreveu, e não em reais — o número em reais varia a cada dia, e um valor desatualizado aqui seria informação errada.</p>
-    </div>
+    <h2 id="voluntario">Quem aceitou a oferta no balcão não foi preterido</h2>
 
-    <div class="cards reveal">
-      <article class="card">
-        <h3>Além da compensação: a escolha é do passageiro</h3>
-        <p>A compensação não substitui o serviço contratado. O passageiro preterido escolhe entre <strong>reacomodação gratuita</strong> em outro voo — próprio ou de terceiro, na data e horário que lhe convenham —, <strong>reembolso integral</strong> ou a realização do trajeto por outra modalidade de transporte.</p>
-      </article>
-      <article class="card">
-        <h3>E a assistência material, conforme a espera</h3>
-        <p>Cumulativa e progressiva, contada do horário original: a partir de <strong>1 hora</strong>, meios de comunicação; a partir de <strong>2 horas</strong>, alimentação adequada ao horário; a partir de <strong>4 horas</strong>, hospedagem em caso de pernoite e o traslado de ida e volta ao aeroporto.</p>
-      </article>
-    </div>
-  </div>
-</section>
+    <p>O art. 23 prevê que, havendo excesso de passageiros, a companhia procure <strong>voluntários</strong> dispostos a viajar em outro voo mediante compensação negociada. Quem aceita essa oferta faz um acordo, e a norma diz expressamente que isso <strong>não configura preterição</strong> — os valores do art. 24 não se aplicam.</p>
 
-<!-- ========================= VOLUNTÁRIO x PRETERIDO ========================= -->
-<section class="section" id="voluntario">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Uma distinção que muda tudo</span>
-      <h2>Quem aceitou a oferta no balcão não foi preterido</h2>
-      <p class="lede">O art. 23 prevê que, havendo excesso de passageiros, a companhia procure <strong>voluntários</strong> dispostos a viajar em outro voo mediante compensação negociada. Quem aceita essa oferta faz um acordo, e a norma diz expressamente que isso <strong>não configura preterição</strong> — os valores do art. 24 não se aplicam.</p>
-    </div>
+    <p>Se você foi voluntário, ofereceram e você concordou, vale entender o que foi combinado e se foi cumprido — mas o caminho é outro. Se você foi preterido, não abriu mão de nada: apresentou-se para embarcar, tinha direito ao assento e foi impedido. Aqui incide o art. 24, e a compensação é obrigação legal, não cortesia da companhia.</p>
 
-    <div class="cards reveal">
-      <article class="card">
-        <h3>Você foi voluntário</h3>
-        <p>Ofereceram, você concordou, negociaram o que você receberia. Vale entender exatamente o que foi combinado e se foi cumprido — mas o caminho é outro.</p>
-      </article>
-      <article class="card">
-        <h3>Você foi preterido</h3>
-        <p>Você não abriu mão de nada. Apresentou-se para embarcar, tinha direito ao assento e foi impedido. Aqui incide o art. 24, e a compensação é obrigação legal — não é cortesia nem liberalidade da companhia.</p>
-      </article>
-    </div>
+    <p class="artigo__nota">Na prática, a fronteira entre as duas situações costuma ser justamente o que se discute: uma oferta feita sob pressão, no portão, a quem já perdeu o voo, nem sempre é o acordo voluntário que a norma descreve. Se você assinou alguma coisa no aeroporto, leve o documento para a conversa.</p>
 
-    <div class="section-head reveal" style="margin-top:2rem">
-      <p class="lede">Na prática, a fronteira entre as duas situações costuma ser justamente o que se discute: uma oferta feita sob pressão, no portão, a quem já perdeu o voo, nem sempre é o acordo voluntário que a norma descreve. <strong>Se você assinou alguma coisa no aeroporto, leve o documento para a conversa.</strong></p>
-    </div>
-  </div>
-</section>
+    <h2 id="alem-da-norma">A compensação da ANAC não é o teto</h2>
 
-<!-- ========================= ALÉM DA NORMA ========================= -->
-<section class="section section--alt" id="alem-da-norma">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">O que se discute em juízo</span>
-      <h2>A compensação da ANAC não é o teto do que se pode pleitear</h2>
-      <p class="lede">A compensação do art. 24 é uma obrigação administrativa da companhia perante a norma da aviação. Ela não se confunde com a reparação civil, e não impede que o passageiro busque em juízo o que efetivamente perdeu.</p>
-    </div>
+    <p>A compensação do art. 24 é uma obrigação administrativa da companhia perante a norma da aviação. Ela não se confunde com a reparação civil, e não impede que o passageiro busque em juízo o que efetivamente perdeu.</p>
 
-    <div class="cards reveal">
-      <article class="card">
-        <h3>Danos materiais</h3>
-        <p>O que a preterição custou de verdade: diária de hotel perdida, transfer que não foi usado, compromisso remarcado, passagem comprada por conta própria para chegar ao destino.</p>
-      </article>
-      <article class="card">
-        <h3>Danos morais</h3>
-        <p>Os tribunais brasileiros reconhecem, em casos de preterição, que o transtorno pode ultrapassar o mero aborrecimento e configurar dano moral indenizável. O reconhecimento e o valor dependem sempre das circunstâncias concretas — o que se perdeu, quanto tempo se esperou, como a companhia tratou o passageiro —, e são fixados pelo juízo, caso a caso.</p>
-      </article>
-    </div>
+    <p>Os danos materiais são o que a preterição custou de verdade: diária de hotel perdida, transfer que não foi usado, compromisso remarcado, passagem comprada por conta própria para chegar ao destino. Quanto aos danos morais, os tribunais brasileiros reconhecem que, em casos de preterição, o transtorno pode ultrapassar o mero aborrecimento e configurar dano indenizável — mas o reconhecimento e o valor dependem sempre das circunstâncias concretas, e são fixados pelo juízo, caso a caso.</p>
 
-    <div class="section-head reveal" style="margin-top:2rem">
-      <p class="lede">Nenhuma página consegue dizer quanto vale um caso, e quem disser não está sendo honesto. O que dá para dizer é o contrário, e é útil: <strong>aceitar um voucher no balcão sem entender a que título ele é oferecido pode encerrar uma discussão que ainda estava aberta.</strong></p>
-    </div>
-  </div>
-</section>
+    <p>Nenhuma página consegue dizer quanto vale um caso, e quem disser não está sendo honesto. O que dá para dizer é o contrário, e é útil: <strong>aceitar um voucher no balcão sem entender a que título ele é oferecido pode encerrar uma discussão que ainda estava aberta.</strong></p>
 
-<!-- ========================= NO AEROPORTO ========================= -->
-<section class="section" id="no-aeroporto">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Se está acontecendo agora</span>
-      <h2>O que fazer ainda no aeroporto</h2>
-      <p class="lede">A prova de uma preterição se produz no lugar e na hora. Cinco minutos ali valem mais que qualquer reconstrução depois.</p>
-    </div>
+    <h2 id="no-aeroporto">O que fazer ainda no aeroporto</h2>
 
-    <ol class="steps">
-      <li class="step reveal">
-        <h3>Peça a recusa por escrito</h3>
-        <p>A companhia deve informar o motivo pelo qual você não embarcou. Um e-mail, um número de protocolo ou um comprovante no aplicativo já serve.</p>
-      </li>
-      <li class="step reveal">
-        <h3>Guarde o bilhete e o cartão de embarque</h3>
-        <p>Eles provam que você se apresentou e tinha assento — que é exatamente o que o art. 22 exige para configurar a preterição.</p>
-      </li>
-      <li class="step reveal">
-        <h3>Fotografe o painel e o portão</h3>
-        <p>Com o horário visível. Registra a situação e a hora real, que depois ninguém consegue reconstruir de memória.</p>
-      </li>
-      <li class="step reveal">
-        <h3>Anote nomes e horários</h3>
-        <p>Quem atendeu, o que foi oferecido, a que horas. Uma nota no celular basta.</p>
-      </li>
-      <li class="step reveal">
-        <h3>Não assine quitação sem ler</h3>
-        <p>Se oferecerem voucher, dinheiro ou upgrade, peça para ver por escrito a que título é. Fotografe o documento antes de assinar.</p>
-      </li>
-      <li class="step reveal">
-        <h3>Guarde todo recibo</h3>
-        <p>Refeição, transporte, hotel, ligação — inclusive o que você pagou do próprio bolso porque a companhia não ofereceu.</p>
-      </li>
+    <p>A prova de uma preterição se produz no lugar e na hora. Cinco minutos ali valem mais que qualquer reconstrução depois.</p>
+
+    <ol>
+      <li><strong>Peça a recusa por escrito.</strong> A companhia deve informar o motivo pelo qual você não embarcou. Um e-mail, um protocolo ou um comprovante no aplicativo já serve.</li>
+      <li><strong>Guarde o bilhete e o cartão de embarque.</strong> Eles provam que você se apresentou e tinha assento — exatamente o que o art. 22 exige.</li>
+      <li><strong>Fotografe o painel e o portão</strong>, com o horário visível.</li>
+      <li><strong>Anote nomes e horários.</strong> Quem atendeu, o que foi oferecido, a que horas.</li>
+      <li><strong>Não assine quitação sem ler.</strong> Se oferecerem voucher, dinheiro ou upgrade, peça para ver por escrito a que título é. Fotografe antes de assinar.</li>
+      <li><strong>Guarde todo recibo.</strong> Refeição, transporte, hotel, ligação — inclusive o que você pagou do próprio bolso.</li>
     </ol>
-  </div>
-</section>
 
-<!-- ========================= DOCUMENTOS ========================= -->
-<section class="section section--alt" id="documentos">
-  <div class="wrap docs-layout">
+    <h2>O que ajuda no seu caso</h2>
 
-    <div class="reveal">
-      <span class="eyebrow">Para a conversa</span>
-      <h2>O que ajuda no seu caso</h2>
-      <p class="lede">Marque o que você já tem. Não precisa ter tudo — parte pode ser obtida depois.</p>
-      <div class="docs-aside">
-        <p><strong>O documento mais valioso é o que a companhia entregou no aeroporto.</strong> Comprovante da recusa, voucher, termo assinado: é ali que costuma estar a diferença entre um caso simples e um caso discutido.</p>
-        <p style="margin-bottom:0">Se estiver sem nada em mãos, converse mesmo assim: dá para orientar o que buscar.</p>
-      </div>
-      <p class="docs-counter">Você marcou <b id="docs-count">0</b> de 6 itens.</p>
-    </div>
+    <p>Não é preciso ter tudo. Parte pode ser obtida depois.</p>
 
-    <ul class="checklist reveal">
-      <li><label class="check">
-        <input type="checkbox" value="bilhete">
-        <span class="check__box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>
-        <span class="check__text">Bilhete ou cartão de embarque</span>
-      </label></li>
-      <li><label class="check">
-        <input type="checkbox" value="recusa">
-        <span class="check__box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>
-        <span class="check__text">Comprovante da recusa de embarque, se houver</span>
-      </label></li>
-      <li><label class="check">
-        <input type="checkbox" value="termo_assinado">
-        <span class="check__box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>
-        <span class="check__text">Voucher ou documento que você assinou no aeroporto</span>
-      </label></li>
-      <li><label class="check">
-        <input type="checkbox" value="gastos">
-        <span class="check__box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>
-        <span class="check__text">Recibos de gastos feitos por causa da preterição</span>
-      </label></li>
-      <li><label class="check">
-        <input type="checkbox" value="compromisso">
-        <span class="check__box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>
-        <span class="check__text">Comprovante do compromisso perdido, se houver</span>
-      </label></li>
-      <li><label class="check">
-        <input type="checkbox" value="conversas">
-        <span class="check__box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>
-        <span class="check__text">Conversas com a companhia — chat, e-mail ou protocolo</span>
-      </label></li>
+    <ul class="artigo__lista">
+      <li>Bilhete ou cartão de embarque</li>
+      <li>Comprovante da recusa de embarque, se houver</li>
+      <li>Voucher ou documento que você assinou no aeroporto</li>
+      <li>Recibos de gastos feitos por causa da preterição</li>
+      <li>Comprovante do compromisso perdido, se houver</li>
+      <li>Conversas com a companhia — chat, e-mail ou protocolo</li>
     </ul>
 
-  </div>
-</section>
+    <h2 id="perguntas">Perguntas frequentes</h2>
 
-<!-- ========================= QUEM ATENDE ========================= -->
-<section class="section section--ink" id="quem-atende">
-  <div class="wrap bio">
-
-    <figure class="bio__photo reveal">
-      <img src="../assets/img/retrato-mariela.jpg" alt="Retrato de Mariela Celestino de Oliveira Gratz, advogada responsável pelo atendimento" width="810" height="1012" loading="lazy">
-      <figcaption>Mariela Celestino de Oliveira Gratz — OAB/ES 14.594</figcaption>
-    </figure>
-
-    <div class="reveal">
-      <span class="eyebrow">Quem vai te atender</span>
-      <h2>Você fala com a advogada, não com um atendente</h2>
-      <blockquote>“Quem passou pelo problema já perdeu tempo demais no aeroporto. O mínimo é não perder mais tempo com o advogado.”</blockquote>
-      <ul class="credentials">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Advogada inscrita na OAB/ES sob o nº 14.594</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> 20 anos de atuação em direito do consumidor e responsabilidade civil</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Atendimento em Celestino Advogados, em Vitória/ES</li>
-      </ul>
-      <a class="btn btn--primary" data-wa="bio" href="#">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.6-6.1c-.25-.13-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.12s-.64.8-.79.97c-.14.17-.29.19-.54.06a6.7 6.7 0 01-3.3-2.9c-.25-.42.25-.4.71-1.3.08-.17.04-.31-.02-.44s-.56-1.35-.77-1.85c-.2-.48-.4-.42-.56-.42h-.48a.92.92 0 00-.67.31c-.23.25-.87.85-.87 2.07s.9 2.4 1.02 2.56c.13.17 1.76 2.69 4.27 3.77 1.59.69 2.21.75 3 .63.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.15-1.19-.06-.1-.23-.17-.48-.29z"/></svg>
-        Falar com a advogada
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- ========================= FAQ ========================= -->
-<section class="section" id="perguntas">
-  <div class="wrap">
-    <div class="section-head center reveal" style="text-align:center">
-      <span class="eyebrow">Dúvidas comuns</span>
-      <h2>Perguntas frequentes</h2>
-    </div>
-
-    <div class="faq reveal">
-      <details id="ja-recebi" data-q="ja-recebi">
+    <div class="faq">
+      <details data-q="ja-recebi">
         <summary>A companhia já me pagou a compensação. Ainda posso discutir alguma coisa?</summary>
-        <div class="faq__body"><p>Pode. A compensação do art. 24 é uma obrigação da companhia perante a norma da aviação e não é, por si só, quitação de tudo o que a preterição causou. Se você teve gastos que ela não cobriu, ou perdeu algo que dinheiro nenhum no balcão reparou, a discussão pode continuar. O que importa é ver <em>a que título</em> o pagamento foi feito e o que você assinou ao recebê-lo.</p></div>
+        <div class="faq__body"><p>Pode. A compensação do art. 24 é uma obrigação da companhia perante a norma da aviação e não é, por si só, quitação de tudo o que a preterição causou. O que importa é ver <em>a que título</em> o pagamento foi feito e o que você assinou ao recebê-lo.</p></div>
       </details>
-      <details id="voucher" data-q="voucher">
+      <details data-q="voucher">
         <summary>Aceitei um voucher no aeroporto. Isso encerra o assunto?</summary>
         <div class="faq__body"><p>Não necessariamente, e é justamente o ponto que mais vale examinar. Um voucher pode ter sido oferecido como assistência material, como compensação do art. 24, ou como acordo que pretende encerrar tudo — e as três coisas têm efeitos muito diferentes. Traga o documento para a conversa.</p></div>
       </details>
-      <details id="voluntario-faq" data-q="voluntario">
+      <details data-q="voluntario">
         <summary>Eu aceitei trocar de voo quando pediram voluntários. Fui preterido?</summary>
         <div class="faq__body"><p>Pela norma, não. O art. 23 diz que a reacomodação de passageiro voluntário, mediante compensação acordada, não configura preterição. Mas vale conversar: o que se discute nesses casos é se houve mesmo escolha livre, e se o que foi combinado foi cumprido.</p></div>
       </details>
-      <details id="prazo" data-q="prazo">
+      <details data-q="prazo">
         <summary>Quanto tempo depois da viagem ainda posso buscar meus direitos?</summary>
         <div class="faq__body">
-          <p>Existe prazo, e ele muda conforme o tipo de voo e o tipo de prejuízo:</p>
-          <p><strong>Voo dentro do Brasil:</strong> 5 anos, tanto para os gastos que você teve quanto para os danos morais (art. 27 do Código de Defesa do Consumidor).</p>
+          <p><strong>Voo dentro do Brasil:</strong> 5 anos, tanto para os gastos quanto para os danos morais (art. 27 do Código de Defesa do Consumidor).</p>
           <p><strong>Voo internacional:</strong> 2 anos para os gastos materiais (art. 35 da Convenção de Montreal) e 5 anos para os danos morais — os tribunais superiores entendem que os acordos internacionais limitam apenas a parte material.</p>
           <p>Se o seu voo foi há mais de dois anos, ainda pode valer a pena conversar: parte do pedido pode continuar em prazo.</p>
         </div>
       </details>
-      <details id="internacional" data-q="internacional">
+      <details data-q="internacional">
         <summary>Meu voo era internacional. Muda alguma coisa?</summary>
         <div class="faq__body"><p>Muda. A compensação do art. 24 é o dobro — 500 DES em vez de 250. E os prazos e a forma de apurar os prejuízos seguem regras próprias, definidas em acordos internacionais.</p></div>
       </details>
       <details data-q="ir-ao-escritorio">
         <summary>Preciso ir ao escritório?</summary>
-        <div class="faq__body"><p>Não. Do primeiro contato ao envio de documentos, tudo é feito pelo celular, no horário que for possível para você. A única etapa em que você participa ao vivo é a audiência de conciliação, e ela também é por videochamada.</p></div>
+        <div class="faq__body"><p>Não. Do primeiro contato ao envio de documentos, tudo é feito pelo celular. A única etapa em que você participa ao vivo é a audiência de conciliação, e ela também é por videochamada.</p></div>
       </details>
       <details data-q="tem-base">
         <summary>Como sei se o meu caso tem base?</summary>
         <div class="faq__body"><p>Conversando. A primeira conversa serve exatamente para isso: entender o que aconteceu e dizer, com honestidade, se há ou não fundamento.</p></div>
       </details>
     </div>
-  </div>
-</section>
 
-<!-- ========================= CHAMADA FINAL ========================= -->
-<section class="section section--ink finale">
-  <div class="wrap wrap--narrow">
+  </div>
+
+  <div class="artigo__fim">
     <h2>Conte como foi a negativa de embarque</h2>
-    <p class="lede">Descreva a sua situação pelo WhatsApp e entenda, sem compromisso, quais direitos se aplicam a ela.</p>
-    <a class="btn btn--primary" data-wa="rodape" href="#">
+    <p>Descreva a sua situação pelo WhatsApp e entenda, sem compromisso, quais direitos se aplicam a ela. Quem responde sou eu.</p>
+    <a class="btn btn--primary" data-wa="fim_artigo" href="#">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.6-6.1c-.25-.13-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.12s-.64.8-.79.97c-.14.17-.29.19-.54.06a6.7 6.7 0 01-3.3-2.9c-.25-.42.25-.4.71-1.3.08-.17.04-.31-.02-.44s-.56-1.35-.77-1.85c-.2-.48-.4-.42-.56-.42h-.48a.92.92 0 00-.67.31c-.23.25-.87.85-.87 2.07s.9 2.4 1.02 2.56c.13.17 1.76 2.69 4.27 3.77 1.59.69 2.21.75 3 .63.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.15-1.19-.06-.1-.23-.17-.48-.29z"/></svg>
-      Falar pelo WhatsApp
+      Falar com a advogada
     </a>
   </div>
-</section>
+
+</article>
 
 <!-- ========================= RODAPÉ ========================= -->
 <footer class="site-footer">
@@ -430,10 +201,11 @@
         <ul>
           <li><a href="#o-que-e">O que é preterição</a></li>
           <li><a href="#compensacao">A compensação da ANAC</a></li>
-          <li><a href="#no-aeroporto">O que fazer no aeroporto</a></li>
+          <li><a href="#voluntario">Voluntário ou preterido</a></li>
           <li><a href="#perguntas">Perguntas frequentes</a></li>
-          <li><a href="/voo/">Outras situações de voo</a></li>
-          <li><a href="/privacidade/">Política de privacidade</a></li>
+          <li><a href="/voo/voo-atrasado/">Voo atrasado</a></li>
+          <li><a href="/voo/voo-cancelado/">Voo cancelado</a></li>
+          <li><a href="/voo/">Todas as situações de voo</a></li>
         </ul>
       </div>
     </div>

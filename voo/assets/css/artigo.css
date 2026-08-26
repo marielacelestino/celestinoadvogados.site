@@ -1,0 +1,65 @@
+/* ============================================================
+   FORMATO DE ARTIGO
+   A landing oferece caminhos; o artigo entrega leitura.
+   Uma coluna, medida de leitura, sem cartões e sem grade.
+   ============================================================ */
+
+.artigo{padding-block:0 var(--sp-7)}
+
+/* --- Cabeçalho do artigo --- */
+.artigo__head{padding-block:var(--sp-7) var(--sp-5);background:var(--brand-050)}
+.artigo__head .wrap{max-width:44rem}
+.artigo__head .eyebrow{display:block;margin-bottom:.9rem}
+.artigo__head h1{font-size:clamp(2rem,1.2rem + 3vw,3.1rem);line-height:1.12;letter-spacing:-.02em;margin-bottom:1.1rem}
+.artigo__head h1 em{display:block;font-family:'Lora',Georgia,serif;font-style:italic;font-weight:500;color:var(--accent-600);margin-top:.35rem}
+.artigo__pe{font-size:var(--step-1);line-height:1.55;color:var(--ink-soft);margin-bottom:1.6rem}
+
+.artigo__assinatura{display:flex;align-items:center;gap:.85rem;padding-top:1.2rem;border-top:1px solid rgba(0,0,0,.1)}
+.artigo__assinatura img{width:3rem;height:3rem;border-radius:50%;object-fit:cover;object-position:center 22%;flex:none}
+.artigo__assinatura p{margin:0;font-size:var(--step--1);line-height:1.45;color:var(--ink-soft)}
+.artigo__assinatura strong{display:block;color:var(--brand-900);font-weight:600}
+
+/* --- Faixa da fotografia --- */
+.artigo__foto{margin:0}
+.artigo__foto img{display:block;width:100%;height:clamp(13rem,26vw,20rem);object-fit:cover;object-position:center 62%}
+.artigo__foto figcaption{max-width:44rem;margin:.65rem auto 0;padding-inline:var(--sp-4);font-size:var(--step--1);color:var(--ink-faint)}
+
+/* --- Corpo: uma coluna, medida de leitura --- */
+.artigo__corpo{max-width:44rem;margin-inline:auto;padding-inline:var(--sp-4);padding-top:var(--sp-6)}
+.artigo__corpo > * + *{margin-top:1.15rem}
+.artigo__corpo h2{scroll-margin-top:5.5rem;font-size:clamp(1.4rem,1.1rem + 1.1vw,1.95rem);line-height:1.22;letter-spacing:-.015em;margin-top:2.9rem}
+.artigo__corpo h3{font-size:var(--step-1);line-height:1.3;margin-top:2rem;color:var(--brand-900)}
+.artigo__corpo p{font-size:var(--step-0);line-height:1.72;color:var(--ink)}
+.artigo__corpo ul,.artigo__corpo ol{padding-left:1.35rem}
+.artigo__corpo li{font-size:var(--step-0);line-height:1.66;color:var(--ink)}
+.artigo__corpo li + li{margin-top:.7rem}
+.artigo__corpo ol{counter-reset:passo;list-style:none;padding-left:0}
+.artigo__corpo ol > li{position:relative;padding-left:2.6rem}
+.artigo__corpo ol > li::before{counter-increment:passo;content:counter(passo,decimal-leading-zero);
+  position:absolute;left:0;top:.05rem;font-family:'Lora',Georgia,serif;font-size:1.05rem;
+  color:var(--accent-600);font-weight:600}
+
+/* Um destaque, usado com parcimônia: o que o leitor não pode perder */
+.artigo__nota{border-left:3px solid var(--accent-500);padding:.15rem 0 .15rem 1.15rem;
+  font-family:'Lora',Georgia,serif;font-size:var(--step-1);line-height:1.5;color:var(--brand-900)}
+
+/* Lista sóbria de documentos — sem caixas de marcar */
+.artigo__lista{list-style:none;padding-left:0;border-top:1px solid rgba(0,0,0,.09)}
+.artigo__lista li{padding:.75rem 0 .75rem 1.7rem;border-bottom:1px solid rgba(0,0,0,.09);position:relative;margin-top:0}
+.artigo__lista li + li{margin-top:0}
+.artigo__lista li::before{content:"";position:absolute;left:.15rem;top:1.25rem;width:.42rem;height:.42rem;
+  border-radius:50%;background:var(--accent-500)}
+
+/* FAQ dentro do artigo: mesma linguagem, sem moldura de cartão */
+.artigo__corpo .faq{margin-top:1.4rem}
+
+/* Fim do artigo: um único convite */
+.artigo__fim{max-width:44rem;margin:var(--sp-7) auto 0;padding:var(--sp-5) var(--sp-4) 0;border-top:2px solid rgba(0,0,0,.12);text-align:center}
+.artigo__fim h2{margin-top:0;font-size:var(--step-2)}
+.artigo__fim p{color:var(--ink-soft);margin-bottom:1.5rem}
+
+@media (max-width:640px){
+  .artigo__head{padding-block:var(--sp-5) var(--sp-4)}
+  .artigo__corpo{padding-top:var(--sp-5)}
+  .artigo__corpo h2{margin-top:2.3rem}
+}

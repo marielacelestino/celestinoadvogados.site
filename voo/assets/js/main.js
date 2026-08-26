@@ -18,8 +18,7 @@
     contextMessages: {                     // mensagem por situação escolhida no hero
       atraso:     'Olá! Meu voo atrasou e gostaria de entender meus direitos.',
       cancelado:  'Olá! Meu voo foi cancelado e gostaria de entender meus direitos.',
-      preterido:  'Olá! Tive o embarque negado (overbooking) e gostaria de entender meus direitos.',
-      bagagem:    'Olá! Tive problema com a minha bagagem e gostaria de entender meus direitos.'
+      preterido:  'Olá! Tive o embarque negado (overbooking) e gostaria de entender meus direitos.'
     },
 
     /* Identificadores de medição. Vazio = tag não sobe, e a página segue
@@ -175,19 +174,23 @@
   }
 
   $$('[data-wa]').forEach(function (el) {
-    el.setAttribute('href', whatsappURL(CONFIG.baseMessage));
+    // data-mensagem: contexto do cartão de situação; sem ele, a mensagem padrão.
+    var msg = el.getAttribute('data-mensagem') || CONFIG.baseMessage;
+    el.setAttribute('href', whatsappURL(msg));
     el.addEventListener('click', function (e) {
       e.preventDefault();
-      goToWhatsApp(CONFIG.baseMessage, el.getAttribute('data-wa'));
+      goToWhatsApp(msg, el.getAttribute('data-wa'));
     });
   });
 
-  // Atalhos de situação no hero: qualificam o lead antes da primeira palavra
-  $$('[data-situacao]').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var key = btn.getAttribute('data-situacao');
-      track('situacao_selecionada', { situacao: key });
-      goToWhatsApp(CONFIG.contextMessages[key] || CONFIG.baseMessage, 'hero_situacao', key);
+  // Atalhos de situação no hero: levam à explicação do caso, não ao WhatsApp.
+  // Quem clica ali pediu informação; a conversa vem depois, no destino.
+  $$('[data-situacao]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      track('situacao_selecionada', {
+        situacao: link.getAttribute('data-situacao'),
+        destino:  link.getAttribute('href')
+      });
     });
   });
 
