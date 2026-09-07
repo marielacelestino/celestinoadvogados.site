@@ -261,7 +261,7 @@ section { padding: 96px 0; }
   gap: 24px;
 }
 .video-grid .video-card {
-  width: 210px;
+  width: 328px;
   border-radius: 14px;
   overflow: hidden;
   border: 1px solid var(--color-border);
